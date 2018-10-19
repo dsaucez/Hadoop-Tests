@@ -622,3 +622,10 @@ node-master:38750	        RUNNING	 node-master:8042	                           0
    slave-3:37299	        RUNNING	     slave-3:8042	                           0
    slave-1:33220	        RUNNING	     slave-1:8042	                           0
 ```
+
+## Notes
+
+This memo took inspirations from
+
+* [Multi Node Cluster in Hadoop 2.x](https://www.edureka.co/blog/setting-up-a-multi-node-cluster-in-hadoop-2.X)
+* [Apache Hadoop 2.9.1 – Hadoop: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)
