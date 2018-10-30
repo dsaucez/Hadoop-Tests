@@ -1,7 +1,16 @@
 # Setup a $n$-nodes Hadoop 2.7.6 Cluster in LXC
 
 ## Topology
-TBD
+
+                              ||
+node-master (name node)+------||
+                              ||
+slave-1 (data node)+----------+|
+                              ||
+                     ...      ||
+                              ||
+slave-n (data node)+----------+|
+                              ||
 
 ## Prepare a base Ubuntu Xenial container
 
