@@ -270,6 +270,19 @@ logout
 Connection to localhost closed.
 ```
 
+To avoid host verification with SSH, edit the __/root/.ssh/config__ file to have
+
+```bash
+Host *
+    StrictHostKeyChecking no
+```
+
+Make sure only root has access to it:
+
+```bash
+chmod 400 /root/.ssh/config
+```
+
 ### Configure the master'specific Hadoop files
 
 Go to the Hadoop distribution directory.
