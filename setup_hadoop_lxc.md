@@ -2,6 +2,7 @@
 
 ## Topology
 
+```
                               ||
 node-master (name node)+------||
                               ||
@@ -11,6 +12,7 @@ slave-1 (data node)+----------+|
                               ||
 slave-n (data node)+----------+|
                               ||
+```
 
 ## Prepare a base Ubuntu Xenial container
 
