@@ -145,9 +145,12 @@ for pod in range(1, k+1):
             addLink(hostname, edgename)
         print()
 
-print ()
-################### hosts_file.append("%s\t%s" %(get_ip(name), name))
+# Let's deploy
+print ("\n# Deploy the experiment")
+print('o.reserve("%s", walltime="%s")' % (location, walltime ))
+print("o.deploy()")
 
+print ()
 # Create and upload /etc/hosts
 print ("\n# Upload /etc/hosts")
 makeHostsFile(nodes=masters+slaves)
@@ -160,7 +163,4 @@ make_slaves_file(slaves=slaves, masters=masters)
 print ("\n# Upload etc/hadoop/masters")
 make_masters_file(masters=masters)
 
-# Let's deploy
-print ("\n# Deploy the experiment")
-print('o.reserve("%s", walltime="%s")' % (location, walltime ))
-print("o.deploy()")
+
