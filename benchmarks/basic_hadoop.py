@@ -116,7 +116,7 @@ make_slaves_file(slaves, masters)
 make_masters_file(masters)
 
 print ("\n# Format DFS")
-cmd = "/root/hadoop/hadoop-2.7.6/bin/hdfs namenode -format"
+cmd = "/root/hadoop/hadoop-2.7.6/bin/hdfs namenode -format -force"
 print ("o.execute_command(",masters[0], ",", cmd, ")")
 
 print ("\n# Start DFS")
