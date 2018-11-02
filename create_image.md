@@ -13,7 +13,7 @@ dsaucez@fnancy:~/hadoop$ cp /home/amerlin/public/distem/distem-fs-jessie-ovs.tar
 dsaucez@fnancy:~/hadoop$ gunzip base.tar.gz
 ```
 
-* delete from the image all the files you don't need, or that you want to replace. In our case as we modify /root/.profile, let's remove it:
+* Delete from the image all the files you don't need, or that you want to replace. In our case as we modify /root/.profile, let's remove it:
 ```bash
 dsaucez@fnancy:~/hadoop$ tar -f base.tar --delete ./root/.profile
 ```
@@ -24,14 +24,14 @@ dsaucez@fnancy:~/hadoop$ tar -f base.tar --delete ./root/.profile
 dsaucez@fnancy:~/hadoop$ mkdir root
 ```
 
-* Download Java and Hadoop 2.7.6 as shown in `Setup a $n$-nodes Hadoop 2.7.6 Cluster in LXC` in this directory. You should have something like:
+* Download Java and Hadoop 2.7.6 as shown in [Setup a $n$-nodes Hadoop 2.7.6 Cluster in LXC](setup_hadoop_lxc.md) in this directory. You should have something like:
 
 ```bash
 dsaucez@fnancy:~/hadoop$ ls root/
 hadoop-2.7.6  jdk-11.0.1
 ```
 
-* Configure Java and Hadoop 2.7.6 as shown in `Setup a $n$-nodes Hadoop 2.7.6 Cluster in LXC` just by editing the files in your _root/<dir>_ directory. Where _<dir>_ corresponds to the Hadoop or Java directory.
+* Configure Java and Hadoop 2.7.6 as shown in [Setup a $n$-nodes Hadoop 2.7.6 Cluster in LXC](setup_hadoop_lxc.md) just by editing the files in your _root/<dir>_ directory. Where _<dir>_ corresponds to the Hadoop or Java directory.
 
 * Create a _.profile_ file that will contain the correct path to Java and Hadoop in this directory
 
