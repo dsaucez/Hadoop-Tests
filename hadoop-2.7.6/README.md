@@ -3,6 +3,7 @@
 1. Update .bashrc to point to the correct JDK and Hadoop directories:
 
    o JDK_DIR=<path to your JDK parent directory>
+   
    o HADOOP_DIR=<path to your Hadoop parent directory>
 
 
